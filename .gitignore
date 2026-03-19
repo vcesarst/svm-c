@@ -1,0 +1,37 @@
+# ==========================================
+# 1. ARTEFATOS DE COMPILAÇÃO C / C++
+# ==========================================
+# Ignorar arquivos objeto e binários gerados pelo compilador
+*.o
+*.out
+*.exe
+*.x
+
+# ==========================================
+# 2. AMBIENTE PYTHON (Scripts auxiliares)
+# ==========================================
+# Ignorar a pasta do ambiente virtual (muito pesada)
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# ==========================================
+# 3. DADOS E DATASETS
+# ==========================================
+# Por padrão, ignorar arquivos de dados para não inchar o repositório
+*.csv
+*.txt
+
+# EXCEÇÃO (A Mágica do Git):
+# Como o iris_scaled.txt é pequeno e essencial 
+# para quem clonar o  repositório testar o código, 
+# abre-se uma exceção para ele 
+!examples/iris_scaled.txt
+
+# ==========================================
+# 4. ARQUIVOS DO SISTEMA OPERACIONAL
+# ==========================================
+.DS_Store
+Thumbs.db
